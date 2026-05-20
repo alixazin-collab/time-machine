@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>21</title>
+
+<style>
+.cs p{
+    height:90px;
+    margin:0;
+    font-size:80px;
+    text-align:center;
+    font-family:fantasy;
+    color:rgb(229,96,178);
+}
+</style>
+</head>
+<body style="background-color:rgb(236, 239, 208);">
+<h1 style="font-size: 20px; color:peru; font-family: cursive; position: relative; left: 1000px; top: 150px;"> <--- click to interact </h1>
+
+<div style="display:contents; justify-content: center; gap: 200px; margin-top: 20px;">
+ 
+    <p style="font-size: 80px; text-align: center; font-family:fantasy; color: rgb(229, 96, 178); position: relative; right: 150px;"> Haiii </p>
+<p style="font-size: 20px; text-align:center; color: rgb(142, 87, 49);"> happy 20th monthsary satoo :P !! </p>
+<p style="font-size: 20px; text-align:center; color: rgb(142, 87, 49);"> I love you always :) </p>
+<p style="font-size: 12px; text-align:center; color: rgb(142, 87, 49);"> (dili jud kaayo ni atchup kayo akong gibuhat kay kalimot nako saon ni HAHAHAH basta oh) </p>
+<img style="display: block; margin-left: auto; margin-right: auto; border-width: 5px; border-color: rgb(92, 60, 9); border-style: solid;" src="ezgif-123e7de523521219.gif" />
+
+<div class="cs" onclick="nextWord()" 
+style="cursor:pointer; height:90px; overflow:hidden; position:relative; left:80px; bottom:836px;">
+    
+    <div id="wordSlider">
+        <p>bibi</p>
+        <p>love</p>
+        <p>baby</p>
+        <p>langga</p>
+        <p>ga</p>
+        <p>langging</p>
+        <p>lab</p>
+        <p>crush</p>
+        <p>Lex</p>
+        <p>Bih</p>
+        <p>Babe</p>
+    </div>
+
+</div>
+
+
+<a href="missive.html"
+style="text-align: center; position: relative; left: 400px; font-size: 70px; color: rgb(142, 87, 49);">
+CLICK TO CONTINUE
+</a>
+
+</div>
+
+<script>
+let index = 0;
+
+function nextWord(){
+    const slider = document.getElementById("wordSlider");
+    const total = slider.children.length;
+
+    index = (index + 1) % total;
+
+    slider.style.transform = "translateY(" + (-90 * index) + "px)";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reminisce</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <h1 style="text-align: center; color: beige; font-family: 'Times New Roman', Times, serif;"> Click to reminisce </h1>
+
+
+<div class="gallery">
+
+<img src="11.JPG" onclick="openImage('1.png')">
+<img src="22.HEIC" onclick="openImage('2.png')">
+<img src="33.jpg" onclick="openImage('3.png')">
+<img src="44.HEIC" onclick="openImage('4.png')">
+<img src="66.HEIC" onclick="openImage('6.png')">
+<img src="77.jpg" onclick="openImage('7.png')">
+<img src="99.HEIC" onclick="openImage('9.png')">
+<img src="100.HEIC" onclick="openImage('10.png')">
+<img src="110.HEIC" onclick="openImage('11e.png')">
+<img src="120.jpg" onclick="openImage('12.png')">
+<img src="130.jpg" onclick="openImage('13.png')">
+<img src="140.HEIC" onclick="openImage('14.png')">
+<img src="150.HEIC" onclick="openImage('15.png')">
+<img src="160.HEIC" onclick="openImage('16.png')">
+<img src="170.jpg" onclick="openImage('17.png')">
+<img src="180.CR2" onclick="openImage('18.png')">
+<img src="190.jpg" onclick="openImage('19.png')">
+<img src="200.HEIC" onclick="openImage('20.png')">
+<img src="210.HEIC" onclick="openImage('21.png')">
+<img src="220.HEIC" onclick="openImage('22t.png')">
+<img src="230.HEIC" onclick="openImage('23.png')">
+<img src="260.jpg" onclick="openImage('26.png')">
+<img src="270.HEIC" onclick="openImage('27.png')">
+<img src="290.PNG" onclick="openImage('29.png')">
+<img src="300.HEIC" onclick="openImage('30.png')">
+
+</div>
+
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+
+<script>
+function openImage(src) {
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup-img").src = src;
+}
+
+function closeImage() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+
+<a href="Yay.html"
+style=" font-family: 'Times New Roman', Times, serif; text-align: center; relative; top: 70px; font-size: 70px; color: rgb(235, 149, 159);">
+Wait, naa pay last?? CLICK DAYON
+</a>
+
+</body>
+</html>
