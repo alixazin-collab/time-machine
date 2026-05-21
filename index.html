@@ -6,23 +6,74 @@
 <title>21</title>
 
 <style>
-.title-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 239, 208);
+    font-family: fantasy;
+    overflow-x: hidden;
 }
 
-/* make Haiii and slider align nicely */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 5vw;
+    color: peru;
+}
+
+/* Main text */
 .haiii {
-    margin: 0;
+    font-size: 12vw;
+    color: rgb(229, 96, 178);
+    margin: 10px 0;
 }
 
-/* override slider height when inside header */
-.title-row .cs {
+.small-text {
+    font-size: 4.5vw;
+    color: rgb(142, 87, 49);
+    margin: 5px 0;
+}
+
+/* Image */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 5px solid rgb(92, 60, 9);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Slider */
+.cs {
+    cursor: pointer;
     height: 12vw;
+    overflow: hidden;
+    width: 70%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.cs p {
+    font-size: 6vw;
     margin: 0;
+    color: rgb(229,96,178);
+}
+
+/* Link */
+a {
+    display: block;
+    margin-top: 30px;
+    font-size: 7vw;
+    color: rgb(142, 87, 49);
+    text-decoration: none;
 }
 </style>
 </head>
@@ -31,13 +82,17 @@
 
 <div class="container">
 
- <div class="title-row">
-    <p class="haiii">Haiii</p>
-     <p class="small-text">happy 20th monthsary satoo :P !!</p>
-<p class="small-text">I love you always :)</p>
-<p class="small-text">(dili jud kaayo ni atchup haha)</p>
+    <h1>click to interact ↓</h1>
 
-    <div class="cs" onclick="nextWord()" width: 25%;>
+    <p class="haiii">Haiii</p>
+
+    <p class="small-text">happy 20th monthsary satoo :P !!</p>
+    <p class="small-text">I love you always :)</p>
+    <p class="small-text">(dili jud kaayo ni atchup haha)</p>
+
+    <img src="ezgif-123e7de523521219.gif">
+
+    <div class="cs" onclick="nextWord()">
         <div id="wordSlider">
             <p>bibi</p>
             <p>love</p>
@@ -52,7 +107,6 @@
             <p>Babe</p>
         </div>
     </div>
-</div>
 
     <a href="missive.html">CLICK TO CONTINUE</a>
 
