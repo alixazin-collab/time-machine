@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+p {
+  font-size: 4vw;
+}
