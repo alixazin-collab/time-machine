@@ -5,46 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>21</title>
 
-<link rel="stylesheet" href="css2/style.css">
-
 <style>
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(236, 239, 208);
-    overflow-x: hidden;
     font-family: fantasy;
+    overflow-x: hidden;
 }
 
 .container {
     width: 90%;
+    max-width: 800px;
     margin: auto;
     text-align: center;
+    padding-top: 20px;
 }
 
+/* Header */
+h1 {
+    font-size: 5vw;
+    color: peru;
+}
+
+/* Main text */
 .haiii {
-    font-size: 10vw;
+    font-size: 12vw;
     color: rgb(229, 96, 178);
-    margin-top: 20px;
+    margin: 10px 0;
 }
 
 .small-text {
     font-size: 4.5vw;
     color: rgb(142, 87, 49);
+    margin: 5px 0;
 }
 
+/* Image */
 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border: 5px solid rgb(92, 60, 9);
+    margin: 20px auto;
+    display: block;
 }
 
+/* Slider */
 .cs {
     cursor: pointer;
     height: 12vw;
     overflow: hidden;
+    width: 70%;
     margin: 20px auto;
-    width: 80%;
+    position: relative;
 }
 
 .cs p {
@@ -53,6 +67,7 @@ img {
     color: rgb(229,96,178);
 }
 
+/* Link */
 a {
     display: block;
     margin-top: 30px;
@@ -67,9 +82,7 @@ a {
 
 <div class="container">
 
-    <h1 style="font-size: 6vw; color:peru;">
-        click to interact ↓
-    </h1>
+    <h1>click to interact ↓</h1>
 
     <p class="haiii">Haiii</p>
 
@@ -77,7 +90,7 @@ a {
     <p class="small-text">I love you always :)</p>
     <p class="small-text">(dili jud kaayo ni atchup haha)</p>
 
-    <img src="images/ezgif-123e7de523521219.gif">
+    <img src="ezgif-123e7de523521219.gif">
 
     <div class="cs" onclick="nextWord()">
         <div id="wordSlider">
@@ -86,8 +99,12 @@ a {
             <p>baby</p>
             <p>langga</p>
             <p>ga</p>
+            <p>langging</p>
             <p>lab</p>
+            <p>crush</p>
             <p>Lex</p>
+            <p>Bih</p>
+            <p>Babe</p>
         </div>
     </div>
 
@@ -103,7 +120,9 @@ function nextWord(){
     const total = slider.children.length;
 
     index = (index + 1) % total;
-    slider.style.transform = "translateY(" + (-8 * index) + "vw)";
+
+    // consistent unit system (vw so mobile scales correctly)
+    slider.style.transform = "translateY(" + (-6 * index) + "vw)";
 }
 </script>
 
