@@ -1,114 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>21</title>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(236, 239, 208);
-    font-family: fantasy;
-    overflow-x: hidden;
+.cs p{
+    height:9vw;
+    margin:0;
+    font-size:8vw;
+    text-align:center;
+    font-family:fantasy;
+    color:rgb(229,96,178);
 }
 
-.container {
+    .container {
     width: 90%;
     max-width: 800px;
     margin: auto;
-    text-align: center;
-    padding-top: 20px;
 }
 
-/* Header */
-h1 {
-    font-size: 5vw;
-    color: peru;
-}
-
-/* Main text */
-.haiii {
-    font-size: 12vw;
-    color: rgb(229, 96, 178);
-    margin: 10px 0;
-}
-
-.small-text {
-    font-size: 4.5vw;
-    color: rgb(142, 87, 49);
-    margin: 5px 0;
-}
-
-/* Image */
-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border: 5px solid rgb(92, 60, 9);
-    margin: 20px auto;
-    display: block;
-}
-
-/* Slider */
-.cs {
-    cursor: pointer;
-    height: 12vw;
-    overflow: hidden;
-    width: 70%;
-    margin: 20px auto;
-    position: relative;
-}
-
-.cs p {
-    font-size: 6vw;
-    margin: 0;
-    color: rgb(229,96,178);
-}
-
-/* Link */
-a {
-    display: block;
-    margin-top: 30px;
-    font-size: 7vw;
-    color: rgb(142, 87, 49);
-    text-decoration: none;
-}
 </style>
 </head>
+<body style="background-color:rgb(236, 239, 208);">
+<h1 style="font-size: 20px; color:peru; font-family: cursive; position: relative; left: 100vw; top: 15vw;"> <--- click to interact </h1>
 
-<body>
+<div style="display:contents; justify-content: center; gap: 20vw; margin-top: 2vw;">
+ 
+    <p style="font-size: 80px; text-align: center; font-family:fantasy; color: rgb(229, 96, 178); position: relative; right: 15vw;"> Haiii </p>
+<p style="font-size: 2vw; text-align:center; color: rgb(142, 87, 49);"> happy 20th monthsary satoo :P !! </p>
+<p style="font-size: 2vw; text-align:center; color: rgb(142, 87, 49);"> I love you always :) </p>
+<p style="font-size: 1vw; text-align:center; color: rgb(142, 87, 49);"> (dili jud kaayo ni atchup kayo akong gibuhat kay kalimot nako saon ni HAHAHAH basta oh) </p>
+<img style="display: block; margin-left: auto; margin-right: auto; border-width: 5px; border-color: rgb(92, 60, 9); border-style: solid;" src="ezgif-123e7de523521219.gif" />
 
-<div class="container">
-
-    <h1>click to interact ↓</h1>
-
-    <p class="haiii">Haiii</p>
-
-    <p class="small-text">happy 20th monthsary satoo :P !!</p>
-    <p class="small-text">I love you always :)</p>
-    <p class="small-text">(dili jud kaayo ni atchup haha)</p>
-
-    <img src="images/ezgif-123e7de523521219.gif">
-
-    <div class="cs" onclick="nextWord()">
-        <div id="wordSlider">
-            <p>bibi</p>
-            <p>love</p>
-            <p>baby</p>
-            <p>langga</p>
-            <p>ga</p>
-            <p>langging</p>
-            <p>lab</p>
-            <p>crush</p>
-            <p>Lex</p>
-            <p>Bih</p>
-            <p>Babe</p>
-        </div>
+<div class="cs" onclick="nextWord()" 
+style="cursor:pointer; height:9vw; overflow:hidden; position:relative; left:8vw; bottom:83vw;">
+    
+    <div id="wordSlider">
+        <p>bibi</p>
+        <p>love</p>
+        <p>baby</p>
+        <p>langga</p>
+        <p>ga</p>
+        <p>langging</p>
+        <p>lab</p>
+        <p>crush</p>
+        <p>Lex</p>
+        <p>Bih</p>
+        <p>Babe</p>
     </div>
 
-    <a href="missive.html">CLICK TO CONTINUE</a>
+</div>
+
+
+<a href="missive.html"
+style="text-align: center; position: relative; left: 400px; font-size: 70px; color: rgb(142, 87, 49);">
+CLICK TO CONTINUE
+</a>
 
 </div>
 
@@ -121,8 +71,7 @@ function nextWord(){
 
     index = (index + 1) % total;
 
-    // consistent unit system (vw so mobile scales correctly)
-    slider.style.transform = "translateY(" + (-6 * index) + "vw)";
+    slider.style.transform = "translateY(" + (-90 * index) + "px)";
 }
 </script>
 
