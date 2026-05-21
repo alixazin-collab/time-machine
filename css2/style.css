@@ -21,9 +21,3 @@ h1 {
 p {
   font-size: 4vw;
 }
-.title-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
