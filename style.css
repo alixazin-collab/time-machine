@@ -1,53 +1,23 @@
-body{
-    background-color: rgb(114, 21, 52);
-    margin: 0;
-    padding: 20px;
-    font-family: sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.gallery img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    transition: 0.5s;
-    cursor: pointer;
+.container {
+  width: 90%;
+  margin: auto;
 }
 
-
-.gallery img:hover{
-    filter: grayscale(100%);
-    transform: scale(1.08);
+h1 {
+  font-size: 8vw;
 }
 
-.popup{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.8);
-
-    justify-content: center;
-    align-items: center;
-}
-
-.popup img{
-    max-width: 90%;
-    max-height: 90%;
-
-    border-radius: 15px;
+p {
+  font-size: 4vw;
 }
